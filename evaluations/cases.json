@@ -1,0 +1,34 @@
+[
+    {
+        "prompt": "Calculate the GC content of ACGTNN.",
+        "expected_tools": [
+            "dna_statistics_tool"
+        ]
+    },
+    {
+        "prompt": "Translate ATGTAA in reading frame 0.",
+        "expected_tools": [
+            "dna_translation_tool"
+        ]
+    },
+    {
+        "prompt": "Compare ACGT with AGGT and report differences.",
+        "expected_tools": [
+            "pairwise_alignment_tool"
+        ]
+    },
+    {
+        "prompt": "Find candidate ORFs on both strands of ATGAAATAA.",
+        "expected_tools": [
+            "orf_discovery_tool"
+        ]
+    },
+    {
+        "prompt": "Analyze ATG!",
+        "expected_behavior": "report validation error"
+    },
+    {
+        "prompt": "Explain whether candidate ORFs are confirmed genes.",
+        "expected_behavior": "preserve computational-prediction caveat"
+    }
+]

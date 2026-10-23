@@ -1,0 +1,10 @@
+[project]
+name = "biopilot"
+version = "0.1.0"
+description = "Autonomous bioinformatics research agent using Google ADK and BioPython"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
